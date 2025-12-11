@@ -8,8 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Secure token from environment variable
-const SECURE_TOKEN = "cf892e9dd1bac29e65c63f2b4c604731"
-//process.env.SECURE_TOKEN;
+const SECURE_TOKEN = process.env.SECURE_TOKEN;
 
 // Middleware
 app.use(bodyParser.text({ type: "text/plain", limit: "50mb" }));
